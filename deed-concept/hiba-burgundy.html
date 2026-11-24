@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>Hiba Deed Concept</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Reem+Kufi:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--main:#123a4d;--main-ink:#0b2633;--gold:#b08d57;--soft:#f6f2ea;--line:#e4ddd0;--muted:#6b7280}
+  body.burgundy{--main:#6d1f2e;--main-ink:#4a1420;--gold:#b08d57;--soft:#f8f1ee;--line:#e9dcd6}
+  body.emerald{--main:#145a46;--main-ink:#0c3d2f;--gold:#b8955a;--soft:#f1f6f2;--line:#d9e6dd}
+  body.royal{--main:#23307a;--main-ink:#161f55;--gold:#c2a15f;--soft:#f2f3fa;--line:#dde0ef}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#d9dce3;font-family:"IBM Plex Sans Arabic",sans-serif;color:#1f2937;font-size:11.5px}
+  .page{width:210mm;min-height:297mm;margin:0 auto;background:#fff;position:relative;overflow:hidden;padding:13mm 12mm}
+  .page::before{content:"";position:absolute;inset:4mm;border:1px solid var(--gold)}
+  .page::after{content:"";position:absolute;inset:5mm;border:.5px solid var(--gold);opacity:.5}
+  .wm{position:absolute;top:42%;left:50%;transform:translate(-50%,-50%) rotate(-28deg);font:700 92px "Reem Kufi";color:var(--main);opacity:.05;white-space:nowrap;pointer-events:none;z-index:5}
+  header{display:flex;justify-content:space-between;align-items:flex-start;padding-bottom:4mm;border-bottom:2px solid var(--main-ink)}
+  .org{display:flex;gap:12px;align-items:center}
+  .logo{width:66px;height:66px;border:1.5px dashed var(--gold);border-radius:50%;display:grid;place-items:center;text-align:center;color:var(--gold);font-size:10px}
+  .org b{font-size:18px;color:var(--main-ink);display:block}
+  .org span{color:var(--muted);font-size:11px}
+  .doc{text-align:left;line-height:2;color:var(--muted)} .doc b{color:#111}
+  .pill{display:inline-block;background:color-mix(in srgb,var(--gold) 22%,#fff);color:color-mix(in srgb,var(--gold) 60%,#000);font-weight:700;font-size:10.5px;padding:2px 10px;border-radius:20px}
+  h1{text-align:center;font:700 28px "Reem Kufi";color:var(--main-ink);margin:7mm 0 2mm}
+  .orn{display:flex;justify-content:center;align-items:center;gap:10px;color:var(--gold);margin-bottom:5mm}
+  .orn i{width:60px;height:1px;background:var(--gold)}
+  .sec{display:flex;justify-content:space-between;align-items:center;margin:5mm 0 3mm}
+  .sec h2{display:flex;gap:9px;align-items:center;font-size:16px;color:var(--main-ink)}
+  .sec h2 em{font-style:normal;background:var(--gold);color:#fff;width:24px;height:24px;border-radius:5px;display:grid;place-items:center;font-size:12px}
+  .sec small{color:var(--muted)}
+  .cards{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+  .card{border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+  .card small{display:block;color:var(--muted);font-size:10px;margin-bottom:6px}
+  .card b{font-size:13px}
+  .span2{grid-column:span 2}
+  .note{color:var(--muted);margin-top:6px;font-size:10.5px} .note b{color:#111}
+  table{width:100%;border-collapse:collapse;border:1px solid var(--line)}
+  th{background:var(--main);color:#fff;padding:8px;text-align:right;font-size:11px}
+  td{padding:8px;border:1px solid var(--line)}
+  tr:nth-child(odd) td{background:var(--soft)}
+  .tag{display:inline-block;padding:1px 10px;border-radius:12px;font-size:10.5px;font-weight:700;background:color-mix(in srgb,var(--main) 12%,#fff);color:var(--main)}
+  .tag.out{background:#fbe3df;color:#a33a2b}.tag.in{background:#dff2e5;color:#22744a}
+  .box{border:1px solid var(--line);border-radius:8px;padding:10px 14px;margin-top:3mm;line-height:2}
+  .own{background:var(--main-ink);color:#fff;border-radius:10px;padding:12px 18px;margin-top:4mm}
+  .own h3{font-size:15px;margin-bottom:8px;color:#fff}
+  .own .row{display:grid;grid-template-columns:1.4fr 1fr 1.2fr 1.2fr .8fr .8fr;gap:8px}
+  .own small{display:block;opacity:.7;font-size:10px;margin-bottom:5px}
+  .own b{font-size:13px} .own .pct{color:var(--gold)}
+  ol{margin:4mm 0;padding-inline-start:16px;line-height:2.1} ol li::marker{color:var(--gold);font-weight:700}
+  .signs{display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid var(--line);padding-top:4mm}
+  .signs span{color:var(--muted);width:24%;text-align:center;border-top:1px dashed #bbb;padding-top:4px}
+  .stamp{width:72px;height:72px;border:1.5px dashed var(--gold);border-radius:8px;display:grid;place-items:center;color:var(--gold);font-size:10px}
+</style>
+</head>
+<body class="burgundy">
+<div class="page">
+  <div class="wm">نموذج تصميم مقترح</div>
+  <header>
+    <div class="org"><div class="logo">شعار<br>الجهة</div><div><b>[اسم الجهة]</b><span>[اسم الإدارة]</span></div></div>
+    <div class="doc"><span class="pill">نموذج تصميم مقترح — غير رسمي</span><br>رقم الوثيقة: <b>[......]</b><br>التاريخ: <b>[ / / ]</b></div>
+  </header>
+
+  <h1>عقد إثبات تملك وهبة مستحق مشاع</h1>
+  <div class="orn"><i></i>◆<i></i></div>
+
+  <div class="sec"><h2><em>١</em>بيانات العقار</h2></div>
+  <div class="cards">
+    <div class="card"><small>رمز العقار</small><b>[....] / [......]</b></div>
+    <div class="card"><small>الوصف</small><b>[الوصف]</b></div>
+    <div class="card"><small>فئة العقار</small><b>[الفئة]</b></div>
+    <div class="card"><small>المنطقة</small><b>[المنطقة]</b></div>
+    <div class="card"><small>رقم المخطط</small><b>[م / .... ج]</b></div>
+    <div class="card"><small>القطعة</small><b>[.]</b></div>
+    <div class="card"><small>القسيمة</small><b>[..]</b></div>
+    <div class="card"><small>المساحة (م²)</small><b>[....]</b></div>
+    <div class="card span2"><small>الرقم الآلي للعقار</small><b>[........]</b></div>
+  </div>
+  <p class="note">المساحة كتابةً: <b>[المساحة بالحروف] متراً مربعاً</b></p>
+
+  <div class="sec"><h2><em>٢</em>إثبات تملك</h2><small>نوع التعامل</small></div>
+  <table>
+    <tr><th>الاسم</th><th>الرقم المدني</th><th>صفته</th><th>سند الملكية</th><th>النسبة</th><th>رمز العقار</th></tr>
+    <tr><td>[اسم الطرف (أ)]</td><td>[............]</td><td><span class="tag">مالك</span></td><td>[.... / ....]</td><td>[..]٪</td><td>[....] / [......]</td></tr>
+    <tr><td>[اسم الطرف (ب)]</td><td>[............]</td><td><span class="tag">مالك</span></td><td>[.... / ....]</td><td>[..]٪</td><td>[....] / [......]</td></tr>
+  </table>
+
+  <div class="sec"><h2><em>٣</em>هبة مستحق مشاع</h2><small>نوع التعامل</small></div>
+  <table>
+    <tr><th>الاسم</th><th>الرقم المدني</th><th>صفته</th><th>سند الملكية</th><th>النسبة</th><th>رمز العقار</th></tr>
+    <tr><td>[اسم الطرف (ب)]</td><td>[............]</td><td><span class="tag out">صادر منه</span></td><td>—</td><td>[..]٪</td><td>[....] / [......]</td></tr>
+    <tr><td>[اسم الطرف (أ)]</td><td>[............]</td><td><span class="tag in">صادر إليه</span></td><td>—</td><td>[..]٪</td><td>[....] / [......]</td></tr>
+  </table>
+  <div class="box">
+    حضر / [اسم الطرف (ب)] وأقر بأنه قد وهب كامل مستحقه المشاع من العقار سالف الوصف إلى / [اسم الطرف (أ)]، وذلك بدون عوض وبغير مقابل، وأن ليس على المستحق المشاع الموهوب حقوق أخرى للغير حتى تاريخه.<br>
+    وحضر الموهوب إليه وأقر بقبوله هبة المستحق المشاع من العقار سالف الوصف بحالته الراهنة ووضع اليد عليه.
+  </div>
+
+  <div class="own">
+    <h3>⌂ بموجب هذه الوثيقة يتملك</h3>
+    <div class="row">
+      <div><small>اسم المالك</small><b>[اسم الطرف (أ)]</b></div>
+      <div><small>الجنسية</small><b>[الجنسية]</b></div>
+      <div><small>الرقم المدني</small><b>[............]</b></div>
+      <div><small>رمز العقار</small><b>[....] / [......]</b></div>
+      <div><small>القسيمة</small><b>[..]</b></div>
+      <div><small>النسبة</small><b class="pct">[...]٪</b></div>
+    </div>
+  </div>
+
+  <ol>
+    <li>بعد التوقيع على هذا العقد من قبل أطرافه واستكمال الإجراءات المقررة، يصبح العقار سالف الوصف ملكاً لـ / [اسم الطرف (أ)].</li>
+    <li>حُرر هذا العقد بناءً على كتاب البلدية رقم [......] لسنة [....]م وطلب أصحاب الشأن.</li>
+  </ol>
+
+  <div class="signs">
+    <span>توقيع الطرف (أ)</span><span>توقيع الطرف (ب)</span><span>الموظف المختص</span><div class="stamp">مكان الختم</div>
+  </div>
+</div>
+</body>
+</html>
