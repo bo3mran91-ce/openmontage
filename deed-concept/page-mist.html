@@ -5,13 +5,14 @@
 <title>Hiba Deed Concept</title>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Reem+Kufi:wght@600;700&display=swap" rel="stylesheet">
 <style>
-  :root{--main:#123a4d;--main-ink:#0b2633;--gold:#b08d57;--soft:#f6f2ea;--line:#e4ddd0;--muted:#6b7280}
+  :root{--paper:#fff;--main:#123a4d;--main-ink:#0b2633;--gold:#b08d57;--soft:#f6f2ea;--line:#e4ddd0;--muted:#6b7280}
   body.burgundy{--main:#6d1f2e;--main-ink:#4a1420;--gold:#b08d57;--soft:#f8f1ee;--line:#e9dcd6}
   body.emerald{--main:#145a46;--main-ink:#0c3d2f;--gold:#b8955a;--soft:#f1f6f2;--line:#d9e6dd}
   body.royal{--main:#23307a;--main-ink:#161f55;--gold:#c2a15f;--soft:#f2f3fa;--line:#dde0ef}
   *{box-sizing:border-box;margin:0;padding:0}
+  body.ivory{--paper:#fbf6ea}body.sand{--paper:#f1e6cf}body.mist{--paper:#eaf0f3}
   body{background:#d9dce3;font-family:"IBM Plex Sans Arabic",sans-serif;color:#1f2937;font-size:11.5px}
-  .page{width:210mm;min-height:297mm;margin:0 auto;background:#fff;position:relative;overflow:hidden;padding:13mm 12mm}
+  .page{width:210mm;min-height:297mm;margin:0 auto;background:var(--paper);position:relative;overflow:hidden;padding:13mm 12mm}
   .page::before{content:"";position:absolute;inset:4mm;border:1px solid var(--gold)}
   .page::after{content:"";position:absolute;inset:5mm;border:.5px solid var(--gold);opacity:.5}
   .wm{position:absolute;top:42%;left:50%;transform:translate(-50%,-50%) rotate(-28deg);font:700 92px "Reem Kufi";color:var(--main);opacity:.05;white-space:nowrap;pointer-events:none;z-index:5}
@@ -30,18 +31,18 @@
   .sec h2 em{font-style:normal;background:var(--gold);color:#fff;width:24px;height:24px;border-radius:5px;display:grid;place-items:center;font-size:12px}
   .sec small{color:var(--muted)}
   .cards{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
-  .card{border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px 10px}
   .card small{display:block;color:var(--muted);font-size:10px;margin-bottom:6px}
   .card b{font-size:13px}
   .span2{grid-column:span 2}
   .note{color:var(--muted);margin-top:6px;font-size:10.5px} .note b{color:#111}
   table{width:100%;border-collapse:collapse;border:1px solid var(--line)}
   th{background:var(--main);color:#fff;padding:8px;text-align:right;font-size:11px}
-  td{padding:8px;border:1px solid var(--line)}
+  td{padding:8px;border:1px solid var(--line);background:#fff}
   tr:nth-child(odd) td{background:var(--soft)}
   .tag{display:inline-block;padding:1px 10px;border-radius:12px;font-size:10.5px;font-weight:700;background:color-mix(in srgb,var(--main) 12%,#fff);color:var(--main)}
   .tag.out{background:#fbe3df;color:#a33a2b}.tag.in{background:#dff2e5;color:#22744a}
-  .box{border:1px solid var(--line);border-radius:8px;padding:10px 14px;margin-top:3mm;line-height:2}
+  .box{background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 14px;margin-top:3mm;line-height:2}
   .own{background:var(--main-ink);color:#fff;border-radius:10px;padding:12px 18px;margin-top:4mm}
   .own h3{font-size:15px;margin-bottom:8px;color:#fff}
   .own .row{display:grid;grid-template-columns:1.4fr 1fr 1.2fr 1.2fr .8fr .8fr;gap:8px}
@@ -53,7 +54,7 @@
   .stamp{width:72px;height:72px;border:1.5px dashed var(--gold);border-radius:8px;display:grid;place-items:center;color:var(--gold);font-size:10px}
 </style>
 </head>
-<body class="emerald">
+<body class="mist">
 <div class="page">
   <div class="wm">نموذج تصميم مقترح</div>
   <header>
